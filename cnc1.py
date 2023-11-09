@@ -451,7 +451,7 @@ def main():
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     print(screenedSuccessfully)
     try:
-        sock.bind(('103.180.136.51', 6667))
+        sock.bind(('0.0.0.0', 6667))
     except:
         print('\x1b[3;31;40m Failed to bind port')
         exit()
